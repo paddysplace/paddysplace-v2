@@ -8,4 +8,14 @@
   h1 {
     display: none;
   }
+
+  .nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  #photo-gallery {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
 }
