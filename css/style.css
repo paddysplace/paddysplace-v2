@@ -27,7 +27,8 @@ body {
 nav {
   position: fixed;
   width: 100%;
-
+  margin: 0;
+  padding: 0;
   background: #443d3d;
   display: flex;
   justify-content: space-between;
