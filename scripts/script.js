@@ -40,6 +40,9 @@ function isElementInViewport(el) {
         (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+/* mobile menu */
+
 /*timeline
 
 const revealr = {

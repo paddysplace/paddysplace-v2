@@ -55,6 +55,9 @@ a {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
+.menu-wrap {
+  display: none;
+}
 #showcase {
   background-size: cover;
   background-position: center;
