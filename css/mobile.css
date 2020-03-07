@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
   }
+  .inline-photo {
+    max-width: 400px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -30,7 +33,9 @@
   .menu-wrap {
     display: contents;
   }
-
+  .inline-photo {
+    max-width: 400px;
+  }
   #photo-gallery {
     grid-template-columns: 1fr 1fr;
     align-items: center;
