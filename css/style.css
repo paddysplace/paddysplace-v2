@@ -133,7 +133,7 @@ img {
 
 .inline-photo {
   border: 1em solid #fff;
-  border-bottom: 4em solid #fff;
+  border-bottom: 3em solid #fff;
   border-radius: 0.25em;
   box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
   margin: 2em auto;
@@ -164,7 +164,7 @@ img {
   position: absolute;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .photo-gallery {
@@ -330,7 +330,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-
+  margin-top: 20px;
   background: #443d3d;
   display: grid;
   place-items: center;
