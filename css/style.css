@@ -336,7 +336,9 @@ footer {
   place-items: center;
   padding: 20px;
 }
-
+footer a {
+  color: white;
+}
 a:hover {
   color: #f4ac45;
 }
