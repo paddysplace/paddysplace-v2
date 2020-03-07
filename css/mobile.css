@@ -18,6 +18,10 @@
     padding: 0 20px 0 0;
   }
 
+  h2 {
+    margin-left: 50px;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
