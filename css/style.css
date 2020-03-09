@@ -17,86 +17,77 @@ body::before {
   z-index: 100;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #485853;
-}
-
-main {
-  /* make sure to cover the screen */
-  min-height: 100vh;
-
-  /* need a solid bg to hide the footer */
-  background: #485853;
-
-  /* put on top */
-  position: relative;
-  z-index: 1;
-
-  padding: 2rem;
-}
-
-/* title and nav bar */
-
-nav {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #443d3d;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-  z-index: 20;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  list-style: none;
-}
-
-li {
-  list-style: none;
-  color: aliceblue;
-}
-
-a {
-  text-decoration: none;
-  padding: 0 25px;
-  margin: 0 10px;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
-}
-
-.menu-wrap {
-  display: none;
-}
-#showcase {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-.fas {
-  display: inline;
-  margin-right: 5px;
+/* **HAMBURGER MENU** */
+:root {
+  --primary-color: #485853;
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75s;
 }
 
 .signature-color {
   color: #f4ac45;
 }
 
-.title {
-  color: aliceblue;
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-  margin-left: 30px;
+body {
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+  background-color: #485853;
 }
 
-h1 {
-  font-size: 29pt;
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
 }
 
-/* slide menu items */
+#showcase {
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+#showcase h1 {
+  font-size: 4rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+#showcase p {
+  font-size: 1.3rem;
+}
+
+.showcase-menu {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+
+.showcase-menu a {
+  justify-content: space-around;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0 25px;
+  margin: 0 10px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.fas {
+  display: inline;
+  margin-right: 5px;
+}
 
 .grow {
   display: block;
@@ -110,12 +101,6 @@ h1 {
   transform: scale(1.1);
   color: #f4ac45;
 }
-.about-content {
-  position: relative;
-  top: 5px;
-}
-
-/* content style */
 .leadLetter {
   color: #f4ac45;
   float: left;
@@ -141,7 +126,7 @@ img {
   transform: translateY(4em) rotateZ(-5deg);
   transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
     opacity 0.3s 0.25s ease-out;
-  max-width: 600px;
+  max-width: 400px;
   width: 90%;
   will-change: transform, opacity;
 }
@@ -181,23 +166,18 @@ img {
   width: 80%;
   will-change: transform, opacity;
 }
-article p {
+
+.about-me-content,
+.timeline-content {
+  width: 70%;
   margin: auto;
-  max-width: 75%;
-  padding-bottom: 2px;
+  margin-top: 50px;
 }
 
-h2 {
-  margin-left: 20px;
-  padding: 10px 0 0 10px;
-}
+/*
 
-.sub-head {
-  position: relative;
-  top: 5px;
-  margin: 2px;
-  padding: 2px;
-}
+
+
 
 /* timeline */
 
@@ -324,21 +304,7 @@ h2 {
   right: 0;
   padding-right: 20px;
 }
-footer {
-  /* place on the bottom */
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 20px;
-  background: #443d3d;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-}
-footer a {
-  color: white;
-}
+
 a:hover {
   color: #f4ac45;
 }
