@@ -1,5 +1,11 @@
 /* Mobile*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  #showcase h1 {
+    font-size: 2.5rem;
+  }
+  .showcase-menu a {
+    font-size: smaller;
+  }
 }
 
 /*Mobile landscape*/
