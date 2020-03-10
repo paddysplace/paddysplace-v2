@@ -1,26 +1,41 @@
 /* Mobile*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   #showcase h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
 /*Mobile landscape*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  #showcase h1 {
+    font-size: 3rem;
+  }
 }
 
 /*small tablets*/
 @media only screen and (min-width: 768px) and (max-width: 979px) {
+  #showcase h1 {
+    font-size: 3.3rem;
+  }
 }
 
 /* small desktop large tablets*/
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
+  #showcase h1 {
+    font-size: 3.6rem;
+  }
 }
 
 /* standard desktop*/
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  #showcase h1 {
+    font-size: 3.9rem;
+  }
 }
 
 /* large desktop */
 @media only screen and (min-width: 1200px) {
+  #showcase h1 {
+    font-size: 4.1rem;
+  }
 }
