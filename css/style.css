@@ -175,7 +175,8 @@ img {
 }
 
 .about-me-content,
-.timeline-content {
+.timeline-content,
+.work-content {
   width: 70%;
   margin: auto;
   margin-top: 50px;
