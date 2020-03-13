@@ -356,6 +356,7 @@ h3 {
 }
 
 /*background images*/
+#showcase-images,
 #garfield-section,
 #bob-section,
 #dean-section,
@@ -365,6 +366,21 @@ h3 {
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+#showcase-images:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #garfield-section {
