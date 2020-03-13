@@ -173,31 +173,31 @@ body::before {
     filter: blur(0);
     opacity: 1;
   }
-  @-webkit-keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
+}
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
-  @keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
 }
 
@@ -312,6 +312,17 @@ body {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
+h2 {
+  font-size: 2.5rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  padding-right: 10px;
+  color: white;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 #showcase p {
   font-size: 1.3rem;
 }
@@ -336,7 +347,94 @@ body {
 .showcase-menu a {
   justify-content: space-around;
 }
+/* cat content */
 
+.cat-menu {
+  display: block;
+  position: fixed;
+  top: 60px;
+}
+
+/*background images*/
+#garfield-section,
+#bob-section,
+#dean-section,
+#ricky-section,
+#little-g-section,
+#you-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#garfield-section {
+  background-image: url("../img/garf_castle-01.jpg");
+}
+
+#bob-section {
+  background-image: url("../img/bob_ricky1.jpg");
+}
+#dean-section {
+  background-image: url("../img/Dean.jpg");
+}
+
+#ricky-section {
+  background-image: url("../img/ricky_edited.jpeg");
+}
+
+#little-g-section {
+  background-image: url("../img/lil-g_cover.jpeg");
+}
+
+#you-section {
+  background-image: url("../img/you_cover.jpg");
+}
+.cat-content {
+  width: 100%;
+  margin-top: 60px;
+}
+.cat-content li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 140px;
+  box-shadow: 7px 7px 7px black;
+  margin-right: 25px;
+  margin-bottom: 8px;
+}
+
+#garfield-section,
+#bob-section,
+#dean-section,
+#ricky-section,
+#little-g-section,
+#you-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.thumbnail:hover {
+  position: relative;
+  transform: transform 0.2s;
+  transform: scale(
+    3
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  right: 240px;
+}
+
+.thumbnail:focus {
+  position: relative;
+  transform: transform 0.2s;
+  transform: scale(
+    3.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  right: 250px;
+}
 a {
   color: white;
   text-decoration: none;
@@ -360,10 +458,11 @@ a {
 
 div .social {
   position: absolute;
-  top: 0;
-  right: 0px;
+  top: 10px;
+  right: 10px;
   color: white;
   z-index: 5;
+  padding: 10px;
 }
 .leadLetter {
   color: #f4ac45;
@@ -381,6 +480,14 @@ div .social {
   right: 0;
   top: 0;
   padding-right: 20px;
+}
+
+.subHead-left {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 img {
@@ -417,10 +524,8 @@ img {
 }
 
 #photo-gallery {
-  position: absolute;
-  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .photo-gallery {
@@ -436,8 +541,16 @@ img {
   max-width: 400px;
   width: 80%;
   will-change: transform, opacity;
+  z-index: 1;
 }
 
+/* enlarege image */
+
+.photo-gallery:hover {
+  transform: scale(1.6);
+}
+
+/* content style */
 .about-me-content,
 .timeline-content,
 .work-content {

@@ -3,6 +3,11 @@
   #showcase h1 {
     font-size: 2.8rem;
   }
+  #photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
 }
 
 /*Mobile landscape*/
@@ -16,6 +21,11 @@
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #showcase h1 {
     font-size: 3.3rem;
+  }
+  #photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
   }
 }
 
