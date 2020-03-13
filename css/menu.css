@@ -69,11 +69,13 @@
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
+  z-index: 200;
 }
 
 /* Rotate On Hover When Checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
+  z-index: 200;
 }
 
 /* Show Menu */
@@ -84,11 +86,13 @@
 .menu-wrap .toggler:checked ~ .menu > div {
   transform: scale(1);
   transition-duration: var(--menu-speed);
+  z-index: 200;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 20;
   transition: opacity 0.4s ease 0.4s;
+  z-index: 200;
 }
 
 .menu-wrap .menu {
