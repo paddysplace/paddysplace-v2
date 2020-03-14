@@ -767,3 +767,13 @@ img {
 a:hover {
   color: #f4ac45;
 }
+
+.pet-list {
+  margin-top: 25px;
+}
+.pet-list img {
+  display: flex;
+  width: 45%;
+  margin: auto;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
