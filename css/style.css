@@ -433,21 +433,8 @@ h3 {
   animation-fill-mode: forwards;
 }
 
-#garfield-section:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
+#garfield-section {
   background-image: url("../img/garf_castle-01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  animation: kenburns-top 5s linear;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
 }
 
 #bob-section {
