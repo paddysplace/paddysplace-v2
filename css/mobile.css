@@ -1,9 +1,15 @@
 /* Mobile*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  #showcase h1 {
-    font-size: 2.8rem;
+  .subHead {
+    font-size: 1.3rem;
+    padding-top: 5px;
   }
-  #photo-gallery {
+
+  #showcase h1 {
+    font-size: 2.5rem;
+  }
+  #photo-gallery,
+  #photo-gallery-about {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
