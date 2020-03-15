@@ -8,6 +8,15 @@
     grid-template-columns: 1fr;
     margin: auto;
   }
+  .pet-list {
+    margin-top: 25px;
+  }
+  .pet-list img {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  }
 }
 
 /*Mobile landscape*/

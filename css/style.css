@@ -428,7 +428,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: kenburns-top 5s linear;
+  animation: kenburns-top 3s linear;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
@@ -560,6 +560,11 @@ img {
   border: 1px black;
 }
 
+.pet-intro {
+  width: 70%;
+  padding-top: 50px;
+  margin: auto;
+}
 .inline-photo {
   border: 1em solid #fff;
   border-bottom: 3em solid #fff;
@@ -610,6 +615,26 @@ img {
   z-index: 1;
 }
 
+#photo-gallery-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.photo-gallery-about {
+  border: 0.5em solid #fff;
+  border-bottom: 1.7em solid #fff;
+  border-radius: 0.2em;
+  box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+  margin: 1.4em auto;
+  opacity: 0;
+  transform: translateY(3em) rotateZ(-5deg);
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.3s 0.25s ease-out;
+  max-width: 400px;
+  width: 80%;
+  will-change: transform, opacity;
+  z-index: 1;
+}
 /* enlarege image */
 
 .photo-gallery:hover {
@@ -763,4 +788,8 @@ a:hover {
   width: 45%;
   margin: auto;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.pet-list ul li{
+list-style: none;
 }
