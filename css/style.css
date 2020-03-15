@@ -393,15 +393,15 @@ h3 {
 .showcase-menu a {
   justify-content: space-around;
 }
-/* cat content */
+/* pet content */
 
-.cat-menu {
+.pet-menu {
   display: block;
   position: fixed;
   top: 60px;
 }
 
-/*background images*/
+/*cat background images*/
 #showcase-images,
 #garfield-section,
 #bob-section,
@@ -455,11 +455,11 @@ h3 {
 #you-section {
   background-image: url("../img/you_cover.jpg");
 }
-.cat-content {
+.pet-content {
   width: 100%;
   margin-top: 60px;
 }
-.cat-content li {
+.pet-content li {
   list-style: none;
   text-decoration: none;
 }
