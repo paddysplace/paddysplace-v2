@@ -415,6 +415,19 @@ h3 {
   background-position: center;
 }
 
+/*rat background images*/
+#rat1-section,
+#rat2-section,
+#rat3-section,
+#rat4-section,
+#rat5-section,
+#rat6-section,
+#rat7-section {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
 #showcase-images:before {
   content: "";
   position: absolute;
@@ -424,7 +437,7 @@ h3 {
   top: 0;
   z-index: -1;
   opacity: 0.5;
-  background-image: url("../img/showcase-background.jpg");
+  background-image: url("https://source.unsplash.com/1600x900/?cats");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -455,6 +468,28 @@ h3 {
 #you-section {
   background-image: url("../img/you_cover.jpg");
 }
+
+#rat1-section {
+  background-image: url("../img/rat-photos/Llittle-Al.jpg");
+}
+#rat2-section {
+  background-image: url("../img/rat-photos/Llittle-Al.jpg");
+}
+#rat3-section {
+  background-image: url("../img/rat-photos/Llittle-Al.jpg");
+}
+#rat4-section {
+  background-image: url("../img/rat-photos/Llittle-Al.jpg");
+}
+#rat5-section {
+  background-image: url("../img/rat-photos/Llittle-Al.jpg");
+}
+#rat6-section {
+  background-image: url("../img/rat-photos/Llittle-Al.jpg");
+}
+#rat7-section {
+  background-image: url("../img/rat-photos/Llittle-Al.jpg");
+}
 .pet-content {
   width: 100%;
   margin-top: 60px;
@@ -478,7 +513,14 @@ h3 {
 #dean-section,
 #ricky-section,
 #little-g-section,
-#you-section {
+#you-section,
+#rat1-section,
+#rat2-section,
+#rat3-section,
+#rat4-section,
+#rat5-section,
+#rat6-section,
+#rat7-section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -790,6 +832,6 @@ a:hover {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-.pet-list ul li{
-list-style: none;
+.pet-list ul li {
+  list-style: none;
 }
