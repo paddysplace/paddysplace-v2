@@ -1,0 +1,56 @@
+.logo-large img {
+  height: 20px;
+  padding: 5px;
+}
+.logo img {
+  height: 40px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.infoBox {
+  background-color: lightgray;
+}
+
+.dates {
+  display: flex;
+}
+
+.dates label,
+input {
+  margin-right: 10px;
+}
+
+.primary-color {
+  color: #e4228e;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+}
+
+// Breakpoints
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  ...;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  ...;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  ...;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ...;
+}

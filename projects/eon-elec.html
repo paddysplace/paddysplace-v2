@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Electricity Calculator</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/8bbbc84def.js" crossorigin="anonymous"></script>
+  <!--<style>
+      #loading,
+      #results {
+        display: none;
+      }
+    </style>-->
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+
+  </head>
+  <body class="bg-dark">
+
+    <!--Nav Bar-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><span class="logo"><img src="./img/eon-logo.png" alt="Bulb-logo-pink" srcset=""></span></i>Energy Calculator</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+         
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fas fa-plug"></i> Electricity <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="eon-gas.html"><i class="fas fa-burn"></i> Gas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Provider
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bulb-elec.html">Bulb</a>
+              <a class="dropdown-item" href="eon-elec.html">E:on</a>
+              <a class="dropdown-item" href="#">Other Coming Soon</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- ELECTRICITY-->
+
+<!-- Tariffs-->
+
+<!--<div class="container "id="inputForm">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div class="card card-body text-center mt-5">
+        <h1 class="heading display-6 pb-3"><i class="fas fa-plug"></i> Tariffs</h1>
+      </div></div></div></div>-->
+
+
+    <div class="container "id="inputForm">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-6 pb-3"><i class="fas fa-plug"></i> Electricity</h1>
+
+  <!--Date Range-->
+  <!--From-->
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon">From</span>
+          <input 
+            type="date" 
+            class="form-control"
+            id="start" /> 
+  <!--To-->      
+    <span class="input-group-addon">To</span>
+        <input 
+          type="date" 
+          class="form-control"
+          id="end" />
+      </div>
+  </div>
+
+    <!--Calculate Units Used-->
+      <!--Previous Units-->
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon">Previous
+          </span> 
+          <input 
+          type="number" 
+          class="form-control"
+          id="oldUnits"
+          placeholder="Reading" />
+        </div>
+      </div>
+
+    <!--Latest Units-->
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon">Latest  </span>
+          <input 
+          type="number" 
+          class="form-control"
+          id="newUnits"
+          placeholder="Reading" 
+          />
+        </div>
+    </div>
+     <!-- Calculate Button-->
+     <div id="button" class="form-group"><a href="#jumpHere"><input 
+      type="button" 
+      onClick="eOnElec()" 
+      value="Calculate"
+      class="btn btn-dark btn-block" ></a>
+    </div>
+    
+          </div></div></div></div>
+          <br>
+          <div id="jumpHere"></div>
+          <br>
+    <!-- Display Results-->
+    <div class="container "id="inputForm">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-7 pb-3"><i class="fas fa-plug"></i> Results</h1>
+    <div id="results" class="pt-4">
+<div  class="form-group">
+  <div class="input-group">
+    <span class="input-group-addon">Number of Days: </span>
+      <div 
+        class="form-control"
+        id="calculatedDays">
+      </div>
+  </div>   
+</div>
+<div class="form-group">
+  <div class="input-group">
+    <span class="input-group-addon">Units Used: </span>
+      <div 
+        class="form-control"
+        id="unitsUsed">
+      </div>
+  </div>   
+</div>
+<div class="form-group">
+  <div class="input-group">
+    <span class="input-group-addon">Subtotal: £</span>
+      <div 
+        class="form-control"
+        id="subTotal">
+      </div>
+  </div>   
+</div>
+<div class="form-group">
+  <div class="input-group">
+    <span class="input-group-addon">Standing Charge: £</span>
+      <div 
+        class="form-control"
+        id="stdCharge">
+      </div>
+  </div>   
+</div>
+<div class="form-group">
+  <div class="input-group">
+    <span class="input-group-addon">VAT @ 5%: £</span>
+      <div 
+        class="form-control"
+        id="addVAT">
+      </div>
+  </div>   
+</div>        
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon">TOTAL: £</span>
+        <div 
+          class="form-control"
+          id="finalTotal">
+          
+        </div>
+    </div>   
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon">Monthly Est (30 days): £</span>
+        <div 
+          class="form-control"
+          id="monthlyAverage">
+          
+        </div>
+    </div>   
+  </div>
+    <!-- Clear Button-->
+    <div id="button" class="form-group"><a href="#top"><input 
+      type="button" 
+      onClick=location.reload() 
+      value="Clear Form"
+      class="btn btn-dark btn-block" ></a>
+
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./scripts/eon-elec.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <!-- partial -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+     <script
+       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+       crossorigin="anonymous"
+     ></script>
+     <script
+       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+       crossorigin="anonymous"
+     ></script>
+  </body>
+</html>
