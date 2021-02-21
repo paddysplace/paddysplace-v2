@@ -69,42 +69,40 @@ html {
   counter-increment: item-counter;
 }
 .item:nth-of-type(1n) {
-  background-image: url(../img/garfield/garf.jpg);
+  background-image: url(../img/cats/bob.jpg);
 }
 .item:nth-of-type(2n) {
-  background-image: url(../img/garfield/garf4.jpg);
+  background-image: url(../img/cats/Dean.jpg);
 }
 .item:nth-of-type(3n) {
-  background-image: url(../img/bob/Bob_bed.jpg);
+  background-image: url(../img/cats/garfield.jpg);
 }
 .item:nth-of-type(4n) {
-  background-image: url(../img/dean/Dean_box.jpg);
+  background-image: url(../img/cats/miaow.jpg);
 }
 .item:nth-of-type(5n) {
-  background-image: url(../img/garfield/garf_sleep.jpg);
+  background-image: url(../img/cats/LittleG_Ricky.jpg);
 }
 .item:nth-of-type(6n) {
-  background-image: url(../img/little-g/little3.jpg);
+  background-image: url(../img/cats/paul.jpg);
 }
 .item:nth-of-type(7n) {
-  background-image: url(../img/ricky/ricky.jpg);
+  background-image: url(../img/cats/paul_ricky.jpg);
 }
 .item:nth-of-type(8n) {
-  background-image: url(../img/you/you2.JPG);
+  background-image: url(../img/cats/you.jpg);
+}
+.item:nth-of-type(9n) {
+  background-image: url(../img/cats/mrwhiskers.jpg);
 }
 .item:nth-of-type(10n) {
-  background-image: url();
+  background-image: url(../img/cats/daisy.jpg);
 }
+
 .item:nth-of-type(11n) {
   background-image: url();
 }
 .item:nth-of-type(12n) {
-  background-image: url();
-}
-.item:nth-of-type(13n) {
-  background-image: url();
-}
-.item:nth-of-type(14n) {
   background-image: url();
 }
 .item:after {
@@ -146,11 +144,4 @@ html {
   text-transform: lowercase;
   letter-spacing: 1.2px;
   color: #828282;
-}
-.item__details:before {
-  content: counter(item-counter);
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding-right: 0.5em;
-  color: #444;
 }
