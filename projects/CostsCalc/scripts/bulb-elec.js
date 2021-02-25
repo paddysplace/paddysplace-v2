@@ -1,8 +1,8 @@
 // *** Electricity Costs ***
 function bulbElec() {
   // Fixed costs
-  const eTariff = 0.126;
-  const eStdRate = 0.1947;
+  const eTariff = 0.1488;
+  const eStdRate = 0.2187;
 
   // Calculate Units Used
   function elecCost() {
@@ -35,7 +35,7 @@ function bulbElec() {
       console.log(end);
       console.log(finalTotal.toFixed(2));
       // Caclulate Monthly Estimate
-      const monthlyAvg = (finalTotal / timePeriod) * 30;
+      const monthlyAvg = (finalTotal / timePeriod) * 31;
       document.getElementById("monthlyAverage").innerHTML = monthlyAvg.toFixed(
         2
       );

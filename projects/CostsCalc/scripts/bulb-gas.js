@@ -2,8 +2,8 @@
 // BULB
 function bulbGas() {
   // Fixed costs
-  const gTariff = 0.326;
-  const gStdRate = 0.195;
+  const gTariff = 0.269;
+  const gStdRate = 0.1947;
 
   // Calculate Units Used
   function gasCost() {
