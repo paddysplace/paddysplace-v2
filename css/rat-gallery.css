@@ -71,34 +71,34 @@ html {
   counter-increment: item-counter;
 }
 .item:nth-of-type(1n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/29112009236.jpg);
 }
 .item:nth-of-type(2n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/DSCF0017.JPG);
 }
 .item:nth-of-type(3n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/DSCF2973.JPG);
 }
 .item:nth-of-type(4n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/DSCF0004.JPG);
 }
 .item:nth-of-type(5n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/GoodnightlittleAl.jpg);
 }
 .item:nth-of-type(6n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/DSCF0006.JPG);
 }
 .item:nth-of-type(7n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/DSCF0007.JPG);
 }
 .item:nth-of-type(8n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/sleepy3.jpg);
 }
 .item:nth-of-type(9n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/DSCF0018.JPG);
 }
 .item:nth-of-type(10n) {
-  background-image: url(../img/rats/);
+  background-image: url(../img/rats/DSCF2973.JPG);
 }
 
 .item:nth-of-type(11n) {
