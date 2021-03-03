@@ -91,13 +91,13 @@ html {
 }
 
 .item:nth-of-type(8n) {
-  background-image: url(../img/rats/sleepy3.jpg);
+  background-image: url();
 }
 .item:nth-of-type(9n) {
-  background-image: url(../img/rats/DSCF0018.JPG);
+  background-image: url();
 }
 .item:nth-of-type(10n) {
-  background-image: url(../img/rats/DSCF2973.JPG);
+  background-image: url();
 }
 
 .item:nth-of-type(11n) {
